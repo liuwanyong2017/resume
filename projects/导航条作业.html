@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航条练习</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    #nav {
+        background:#aaa;
+        width:600px;
+      
+        height:40px;
+        text-align:center;
+        margin:0 auto;
+    }
+    
+    
+     li{
+        list-style:none;
+        float:left;
+        margin:10px 0;
+        padding:0 30px;
+    }
+    li:hover{
+        color:#777;
+    }
+    ul li ul li{
+     
+        float:none;
+       
+    }
+    ul li ul{
+           display:none;
+    }
+    ul li {
+        position:relative;
+    }
+
+    ul li:hover ul {
+        display:block;
+         top:40px;
+         left:0;
+     position:absolute;
+        } 
+      
+</style>
+</head>
+<body>
+   <div id="nav">
+       <ul class="manu">
+           <li><a href="#">首页</a></li>
+           <li><a href="#">作品</a></li>
+           <li><a href="#">更多</a>
+        <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">知乎</a></li>
+        </ul>
+
+        </li>
+       </ul>
+       </div> 
+</body>
+</html>
