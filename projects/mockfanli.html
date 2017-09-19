@@ -7,8 +7,8 @@
 var xhr = new XMLHttpRequest()
 xhr.open('GET','/resume/cate.json',true)
 xhr.send()
-xhr.onload = function(date){
-    console.log(date)
+xhr.onload = function(){
+    console.log(JSON.parse(xhr.responseText))
 }
 </script>
 </body>
